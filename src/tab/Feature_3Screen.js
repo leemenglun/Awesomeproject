@@ -7,6 +7,7 @@ export class Feature_3Screen extends Component{
     render(){
         return (
             <SafeAreaView style={{ flex: 1,backgroundColor:'#455a64' }}>
+              <CustomHeader title="Feature" navigation={this.props.navigation}/>
               <ScrollView style={{flex:1,marginLeft:35,marginRight:35}}>
                 <Text style={{textAlign:'center',color:'#00796b',fontSize:30,fontWeight:'bold'}}>智慧雲端商務系統開發學程</Text>
                 <Text style={{textAlign:'center',color:'#fff',marginTop:15}}>智慧雲端商務系統開發學程設置宗旨在於培養網站系統開發、及行動通訊軟體開發人才，學生可依興趣選修相關課程，培養學生網頁資訊系統之規劃、建置及管理能力，或培育學生具備行動通訊軟體開發領域的規劃、設計與研發能力。</Text>

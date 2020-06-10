@@ -7,6 +7,7 @@ export class Feature_2Screen extends Component{
     render(){
         return (
             <SafeAreaView style={{ flex: 1,backgroundColor:'#455a64' }}>
+              <CustomHeader title="Feature" navigation={this.props.navigation}/>
               <ScrollView style={{flex:1,marginLeft:35,marginRight:35}}>
                 <Text style={{textAlign:'center',color:'#00796b',fontSize:30,fontWeight:'bold'}}>創新網路行銷與分析學程</Text>
                 <Text style={{textAlign:'center',color:'#fff',marginTop:15}}>創新網路行銷與分析學程設置宗旨在於因應網路電商時代的來臨，培育學生智慧商務與創新行銷能力，其中課程內容主要針對智慧技術與電商管理二部分為主，包含電子商務網站建置、電子商務行銷操作、以及電子商務大數據分析。</Text>

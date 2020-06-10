@@ -7,6 +7,7 @@ export class Feature_5Screen extends Component{
     render(){
         return (
             <SafeAreaView style={{ flex: 1,backgroundColor:'#455a64' }}>
+              <CustomHeader title="Feature" navigation={this.props.navigation}/>
               <ScrollView style={{flex:1,marginLeft:35,marginRight:35}}>
                 <Text style={{textAlign:'center',color:'#00796b',fontSize:30,fontWeight:'bold'}}>智慧金融與大數據學程</Text>
                 <Text style={{textAlign:'center',color:'#fff',marginTop:15}}>智慧金融與大數據學程設置宗旨在培養智慧金融的分析與應用系統開發人才，課程設計以大數據資料(Big Data)分析為基礎，培養學生的數據採擷與智慧分析實力，學程規劃強調資料應用與資訊技術整合能力，以以厚植學生在商務應用系統上的開發能力，進而培育智慧商務時代所需資訊與金融跨領域實作人才。</Text>

@@ -6,6 +6,7 @@ export class Feature_1Screen extends Component{
     render(){
         return (
             <SafeAreaView style={{ flex: 1,backgroundColor:'#455a64' }}>
+              <CustomHeader title="Feature" navigation={this.props.navigation}/>
               <ScrollView style={{flex:1,marginLeft:35,marginRight:35}}>
                 <Text style={{textAlign:'center',color:'#00796b',fontSize:30,fontWeight:'bold'}}>智慧商務基礎必修</Text>
                 <Text style={{textAlign:'center',color:'#fff',marginTop:15}}>為了因應智慧商業時代的到來，本系在必修科目部分主要分為智能管理與技術兩大類別。在管理部分以智慧商務理論與概念為主，在技術部分則著重雲端運算、人工智慧、物聯網，以及大數據分析的應用。</Text>

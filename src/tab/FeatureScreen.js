@@ -7,6 +7,7 @@ export class FeatureScreen extends Component{
     render(){
         return (
             <SafeAreaView style={{ flex: 1,backgroundColor:'#455a64' }}>
+              <CustomHeader title="Feature" isHome={true} navigation={this.props.navigation}/>
               <ScrollView style={{flex:1,marginLeft:55}}>
                 <TouchableOpacity onPress={() => {
                   this.props.navigation.navigate('Feature_1')

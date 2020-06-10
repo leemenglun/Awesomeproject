@@ -7,6 +7,7 @@ export class Feature_4Screen extends Component{
     render(){
         return (
             <SafeAreaView style={{ flex: 1,backgroundColor:'#455a64'}}>
+              <CustomHeader title="Feature" navigation={this.props.navigation}/>
               <ScrollView style={{flex:1,marginLeft:35,marginRight:35}}>
                 <Text style={{textAlign:'center',color:'#00796b',fontSize:30,fontWeight:'bold'}}>智慧物聯網學程</Text>
                 <Text style={{textAlign:'center',color:'#fff',marginTop:15}}>智慧物聯網學程有系統的使學生的學習由淺入深，進而培育學生擁有智慧物聯網的概念、架構、趨勢與技術，其中包含感知層、網路層與應用層之實作技術，應用物聯網及資通訊技術於商務流程與模式效能改善，以及系統整合能力，培養具備智慧物聯網創新應用所需知識的智慧科技人才。</Text>
