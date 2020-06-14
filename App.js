@@ -6,7 +6,7 @@ import {createStackNavigator} from '@react-navigation/stack';
 import { createDrawerNavigator } from '@react-navigation/drawer';
 
 import {CustomDrawerContent} from './src';
-import {TeacherScreen,WishScreen,GoalScreen,FeatureScreen,BriefScreen,MemberScreen,EventScreen,Feature_1Screen,Feature_2Screen,Feature_3Screen,Feature_4Screen,Feature_5Screen,Mapscreen,ClassScreen} from './src/tab';
+import {TeacherScreen,WishScreen,GoalScreen,FeatureScreen,BriefScreen,MemberScreen,EventScreen,Feature_1Screen,Feature_2Screen,Feature_3Screen,Feature_4Screen,Feature_5Screen,Mapscreen,ClassScreen, NewsScreen} from './src/tab';
 import {LoginScreen,ResgisterScreen} from './src/auth';
 import {IMAGE} from './src/constants/Image';
 
@@ -48,11 +48,6 @@ function TabNavigator(){
           ? IMAGE.ICON_CLASS_WHITE
           : IMAGE.ICON_CLASS
         }
-        else if (route.name==='Member'){
-          iconName = focused
-          ? IMAGE.ICON_TEACHER_WHITE
-          : IMAGE.ICON_TEACHER
-        }
 
         // You can return any component that you like here!
         return <Image source={iconName} style={{width:20,height:20,resizeMode:'contain'}}/>;
@@ -63,9 +58,8 @@ function TabNavigator(){
       inactiveTintColor: 'black',
     }}
     >
-      <Tab2.Screen name="Hope" component={WishScreen} />
+      <Tab2.Screen name="Hope" component={NewsScreen} />
       <Tab2.Screen name="Map" component={Mapscreen} />
-      <Tab2.Screen name="Member" component={LoginScreen} />
     </Tab2.Navigator>
   )
 }
